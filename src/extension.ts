@@ -254,7 +254,7 @@ function getHtml(doomFace: vscode.Uri, stylesheetUri: vscode.Uri) {
         <section>
           <img src="${doomFace}">
           <h2 class=${errorNum ? "alarm" : ""}>
-            ${errorNum} ${errorNum === 1 ? "error" : "errors"}
+            ${errorNum} ${errorNum === 1 ? "Error" : "Errors"}
           </h2>
         </section>
       </body>
