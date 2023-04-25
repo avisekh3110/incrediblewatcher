@@ -4,7 +4,7 @@ _Pulished By: Avisekh Sabi_
 
 _version: 1.0.0_
 
----
+**EXTENSION FOR ALL LANGUAGES**
 
 ## **Features**
 
