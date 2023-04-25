@@ -31,5 +31,3 @@ You can see faces that change with the number of source code errors.
 [Instagram]("https://www.instagram.com/avisekh_sabi/")
 
 [Youtube]("https://www.youtube.com/@avisekhartzz")
-
-6cudqlxk6r2iihhuhpl4v3fqxbq4q5zcfm5mkpz752p2nsyqfe4a
