@@ -1,0 +1,102 @@
+{
+  "name": "incrediblewatcher",
+  "displayName": "Incredible Watcher",
+  "description": "It is a VS code Extension that takes error and display it in a funny way. It make coding fun.",
+  "version": "1.0.0",
+  "publisher": "AvisekhSabi",
+  "homepage": "https://github.com/avisekh3110/incrediblewatcher",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avisekh3110/incrediblewatcher"
+  },
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#191919",
+    "theme": "dark"
+  },
+  "keywords": [
+    "in your face",
+    "visualization",
+    "doom",
+    "ouch",
+    "face",
+    "errors",
+    "error lens",
+    "error count"
+  ],
+  "__metadata": {
+    "publisherDisplayName": "Avisekh Sabi"
+  },
+  "activationEvents": [
+    "onCommand:incredible-watcher.openview.focus",
+    "onView:incredible-watcher.openview"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "custom-activitybar",
+          "title": "incrediblewatcher",
+          "icon": "assets/logo_bito.svg"
+        }
+      ]
+    },
+    "views": {
+      "custom-activitybar": [
+        {
+          "type": "webview",
+          "id": "incredible-watcher.openview",
+          "name": "Incredible Watcher",
+          "contextualTitle": "Incredible Watcher"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "incrediblewatcher",
+      "properties": {
+        "InYourFace.error.usewarnings": {
+          "type": "boolean",
+          "default": false,
+          "description": "Should take in account warnings"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "incredible-watcher.openview.focus",
+        "category": "In Your Face",
+        "title": "Open Sidebar",
+        "icon": "$(clear-all)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.77.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+    "@vscode/test-electron": "^2.3.0"
+  }
+}

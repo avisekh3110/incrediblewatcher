@@ -1,0 +1,29 @@
+body,
+html {
+  background-color: transparent;
+}
+
+section {
+  height: 100vh;
+  max-width: 10rem;
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  place-items: center;
+}
+
+section img {
+  object-fit: contain;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+
+h2 > .alarm {
+  color: rgb(255, 0, 0);
+}
+h2 > .yellow {
+  color: rgb(176, 173, 7);
+}
